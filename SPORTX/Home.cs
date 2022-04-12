@@ -25,11 +25,23 @@ namespace SPORTX
     //⣿⣿⣿⣿⣿⣿⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿
     //⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣾⣿⣿⣿
     //⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣿⣿⣿⣿⣿⣿
-    public partial class Sotrudniki : Form
+    public partial class Home : Form
     {
-        public Sotrudniki()
+        public Home()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Client frm = new Client();
+            frm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Staff frm = new Staff();
+            frm.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -37,7 +49,13 @@ namespace SPORTX
             this.Close();
         }
 
-        private void Sotrudniki_Load(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Tarif frm = new Tarif();
+            frm.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
