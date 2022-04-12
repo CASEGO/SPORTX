@@ -91,5 +91,10 @@ namespace SPORTX
         {
             this.сотрудникиTableAdapter.Fill(this.sportxDataSet.Сотрудники);
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

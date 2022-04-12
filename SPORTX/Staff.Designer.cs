@@ -71,6 +71,7 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Поиск и изменение сотрудников";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button5
             // 
@@ -151,9 +152,9 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(12, 659);
+            this.button4.Location = new System.Drawing.Point(18, 346);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(160, 62);
+            this.button4.Size = new System.Drawing.Size(352, 43);
             this.button4.TabIndex = 4;
             this.button4.Text = "Выход";
             this.button4.UseVisualStyleBackColor = true;
@@ -172,7 +173,7 @@
             this.dataGridView1.DataSource = this.сотрудникиBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(392, 14);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1009, 707);
+            this.dataGridView1.Size = new System.Drawing.Size(1009, 375);
             this.dataGridView1.TabIndex = 5;
             // 
             // iDDataGridViewTextBoxColumn
@@ -227,7 +228,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1413, 733);
+            this.ClientSize = new System.Drawing.Size(1413, 401);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox1);
