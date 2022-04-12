@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -55,14 +55,32 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Поиск и изменение сотрудников";
             // 
-            // button1
+            // label1
             // 
-            this.button1.Location = new System.Drawing.Point(6, 60);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(352, 43);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Поиск";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(10, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(150, 25);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Введите ФИО";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1.Location = new System.Drawing.Point(166, 23);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(192, 31);
+            this.textBox1.TabIndex = 5;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(6, 158);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(352, 43);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Удалить";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -73,14 +91,14 @@
             this.button2.Text = "Добавить";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // button1
             // 
-            this.button3.Location = new System.Drawing.Point(6, 158);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(352, 43);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Удалить";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(6, 60);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(352, 43);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Поиск";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -92,24 +110,6 @@
             this.button4.Text = "Выход";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(166, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(192, 31);
-            this.textBox1.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(10, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 25);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Введите ФИО";
             // 
             // dataGridView1
             // 
@@ -129,6 +129,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Sotrudniki";
             this.Text = "Sotrudniki";
+            this.Load += new System.EventHandler(this.Sotrudniki_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
